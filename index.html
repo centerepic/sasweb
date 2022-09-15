@@ -1,21 +1,57 @@
-<body bgcolor=”#000000">
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 
-<section class="container">
-  <h2>Caption</h2>
-  <div class="text-container">
-    <div class="text-box">
-      <h3 style="color:crimson">sashaa</h3>
-      <p style="color:crimson">i make bad scripts sometimes</p>
-    </div>
-    <div class="text-box">
-      <h3>My scripts</h3>
-      <a href="https://github.com/centerepic">My Github</a>
-      <a href="https://github.com/centerepic/LifeSentanceScript">Life Sentance GUI</a>
-      <a href="https://github.com/centerepic/script-host/blob/main/DOORS%20GUI%20SPEEDRUN%20v2">DOORS GUI</a>
-    </div>
-    <div class="text-box">
-      <h3 style="color:crimson">yea thats it</h3>
-      <p style="color:crimson">yup</p>
+
+<script>
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+</script>
+
+<section>
+  <h1>sashaa / centerepic  |  lego exploiting since 2020</h1>
+</section>
+<section>
+  <div class="container reveal fade-bottom">
+    <h2>Roblox Scripts</h2>
+    <div class="text-container">
+      <div class="text-box">
+        <a href="https://github.com/centerepic/LifeSentanceScript/blob/main/main.lua"><h3>Life Sentence GUI</h3></a>
+		<p><b>
+          GUI for <a href="https://www.roblox.com/games/7860844204">Life Sentence</a>, featuring some game breaking vunlerabilities, like a full serverside anticheat bypass.
+        </b></p>
+      </div>
+      <div class="text-box">
+        <a href="https://github.com/centerepic/script-host/blob/main/DOORS%20GUI%20SPEEDRUN%20v2"><h3>DOORS GUI</h3></a>
+        <p><b>
+          GUI for <a href="https://www.roblox.com/games/6516141723">DOORS</a>, has an autocomplete, level skipper, and a lot of useful features.
+        </b></p>
+      </div>
+      <div class="text-box">
+        <a href="https://github.com/centerepic/script-host/blob/main/utgautofarm%20(1).lua"><h3>Untitled Tag Game Autofarm</h3></a>
+        <p><b>
+          Autofarm for <a href="https://www.roblox.com/games/8365905206">untitled tag game</a>, pretty low chance of getting banned since mods r sleeping
+        </b></p>
+      </div>
     </div>
   </div>
+</section>
+
+<section>
+</section>
+
+<section>
 </section>
