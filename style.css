@@ -44,9 +44,10 @@ section .text-container {
   display: flex;
 }
 section .text-container .text-box {
+  border-radius: 10px;
   margin: 20px;
   padding: 20px;
-  background: #00c2cb;
+  background: #b69b04;
 }
 section .text-container .text-box h3 {
   font-size: 30px;
