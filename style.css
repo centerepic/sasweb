@@ -40,6 +40,9 @@ section h2 {
   text-align: center;
   text-transform: uppercase;
 }
+div {  
+  padding: 50px;  
+} 
 section .text-container {
   display: flex;
 }
