@@ -5,34 +5,41 @@
   box-sizing: border-box;
   font-family: "Karla", sans-serif;
 }
-body {
-  background: #201E20;
-}
+body{
+    background: linear-gradient(#0a0a0a, #130000);
+  }
 img {
   padding: 10%;
 }
+
+a:link {text-shadow: 0px 0px 4px #ffffff81; color: #171355; text-decoration: none}
+a:visited {text-shadow: 0px 0px 4px #ffffff81; color: #171355; text-decoration: none}
+a:hover {text-shadow: 0px 0px 5px #ffffffd7; color: #3366CC; text-decoration: underline}
+a:active {text-shadow: 0px 0px 4px #ffffff81; color: #171355; text-decoration: none}
+
 section {
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 section:nth-child(1) {
+  text-shadow: 0px 0px 4px #ffffff81;
+  min-height: 100vh;
   color: #A2928A;
 }
 section:nth-child(2) {
-  color: #995A30;
-  background: #2E2D2D;
+  color: #2c1805;
 }
 section:nth-child(3) {
-  color: #e0ffff;
+  color: #2c1805;
 }
 section:nth-child(4) {
+  min-height: 100vh;
   color: #42455a;
-  background: #1A1B22;
 }
 section .container {
-  margin: 100px;
+  margin: 20px;
 }
 section h1 {
   font-size: 3rem;
@@ -47,10 +54,10 @@ section .text-container {
   display: flex;
 }
 section .text-container .text-box {
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 20px;
   padding: 20px;
-  background: #b69b04;
+  background: #a8a6c0;
 }
 section .text-container .text-box h3 {
   font-size: 30px;
@@ -78,19 +85,19 @@ section .text-container .text-box h3 {
   opacity: 1;
 }
 .active.fade-bottom {
-  animation: fade-bottom 0.5s ease-out;
+  animation: fade-bottom 0.3s ease-in-out;
 }
 .active.fade-left {
-  animation: fade-left 0.5s ease-out;
+  animation: fade-left 0.3s ease-in-out;
 }
 .active.fade-right {
-  animation: fade-right 0.5s ease-out;
+  animation: fade-right 0.3s ease-in-out;
 }
 @keyframes fade-bottom {
   0% {
-    transform: translateY(50px);
-    transform: translateX(-100px);
+    transform: translateY(70px);
     opacity: 0;
+    /* transform: translateX(-500px); */
   }
   100% {
     transform: translateY(0);
@@ -100,10 +107,12 @@ section .text-container .text-box h3 {
 }
 @keyframes fade-left {
   0% {
-    transform: translateX(-100px);
+    transform: translateY(70px);
     opacity: 0;
+    /* transform: translateX(-500px); */
   }
   100% {
+    transform: translateY(0);
     transform: translateX(0);
     opacity: 1;
   }
@@ -111,10 +120,12 @@ section .text-container .text-box h3 {
 
 @keyframes fade-right {
   0% {
-    transform: translateX(100px);
+    transform: translateY(70px);
     opacity: 0;
+    /* transform: translateX(-500px); */
   }
   100% {
+    transform: translateY(0);
     transform: translateX(0);
     opacity: 1;
   }
