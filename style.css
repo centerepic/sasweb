@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,200&display=swap');
+
+@font-face {
+  font-family: 'Dymaxion';
+  src: url('./Dymaxion.woff') format('woff');
+}
+html, body {
+  background-color: #181717;
+  height: 100%;
+  margin: 0;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff69b4, 0 0 40px #ff69b4, 0 0 50px #ff69b4, 0 0 60px #ff69b4, 0 0 70px #ff69b4;
+  }
+  49% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f77eba, 0 0 40px #f77eba, 0 0 50px #f77eba, 0 0 60px #f77eba, 0 0 70px #f77eba;
+  }
+  50% {
+    text-shadow: 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #000000, 0 0 60px #000000, 0 0 70px #000000, 0 0 80px #000000;
+  }
+  51% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff69b4, 0 0 40px #ff69b4, 0 0 50px #ff69b4, 0 0 60px #ff69b4, 0 0 70px #ff69b4;
+  }
+  52% {
+    text-shadow: 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #000000, 0 0 60px #000000, 0 0 70px #000000, 0 0 80px #000000;
+  }
+  53% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff69b4, 0 0 40px #ff69b4, 0 0 50px #ff69b4, 0 0 60px #ff69b4, 0 0 70px #ff69b4;
+  }
+  100% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff69b4, 0 0 40px #ff69b4, 0 0 50px #ff69b4, 0 0 60px #ff69b4, 0 0 70px #ff69b4;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    color: #fff;
+  }
+  49% {
+    color: #fff;
+  }
+  50% {
+    color: #000;
+  }
+  51% {
+    color: #fff;
+  }
+  52% {
+    color: #000;
+  }
+  53% {
+    color: #ffffff;
+  }
+  100% {
+    color: #fff;
+  }
+}
+
+.glow {
+  color: #fff;
+  animation: glow 10s ease-in-out infinite, flicker 10s ease-in-out infinite;
+}
+
+.projectblock {
+  max-width: 807px;
+  background-color: #1a1818;
+  width: 100%;
+  height: 20vh;
+  padding-bottom: 3%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.text-container {
+  height: 100%;
+  width: 10%;
+  writing-mode: vertical-rl;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-family: Montserrat;
+  transform: rotate(180deg);
+  font-size: 2em;
+  color: #ffffff;
+}
+
+.image-container {
+  height: 100%;
+  width: 90%;
+}
+
+.image-link {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+body {
+  background-image: linear-gradient(to top, #181717 75%, #0f050f , #181717);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 3%;
+  font-size: 800%;
+  font-family: Dymaxion;
+  font-weight: 100;
+  color: rgb(236, 155, 223);
+}
+
+h2 {
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
